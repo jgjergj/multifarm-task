@@ -28,7 +28,7 @@ export const AssetAreaChart = (props: Props) => {
 		<ResponsiveContainer width="100%" aspect={5}>
 			<AreaChart width={600} height={400} data={data}>
 				<CartesianGrid strokeDasharray="3 3" />
-				<XAxis dataKey={xAxisDataKey || "name"} />
+				<XAxis dataKey={xAxisDataKey || "name"} reversed />
 				<YAxis dataKey={yAxisDataKey} width={100} />
 				<Tooltip />
 				<Area
